@@ -1,0 +1,664 @@
+<resources>
+    <string name="app_name">TestHardwareApp</string>
+    <string-array name="test_category">
+        <item>Screen</item>
+        <item>Mini Screen</item>
+        <item>Microphone</item>
+        <item>Sound</item>
+        <item>Touch</item>
+        <item>Proximity sensor</item>
+        <item>Light sensor</item>
+        <item>Accelerometer sensor</item>
+<!--        <item>Humidity sensor</item>-->
+<!--        <item>Temperature sensor</item>-->
+    </string-array>
+    <string name="toggle_flash">Toggle Flash</string>
+    <string name="action_settings">Settings</string>
+    <string name="scanned_data">Scanned Data</string>
+    <string name="audio_recorder">Audio Recorder</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="play_recording">Play Recording</string>
+    <string name="stop_playing">Stop Playing</string>
+    <string name="status">Status</string>
+    <string name="category_screen">Screen</string>
+    <string name="category_mini_screen">Mini Screen</string>
+    <string name="category_touch">Touch</string>
+    <string name="category_sound">Sound</string>
+    <string name="category_microphone">Microphone</string>
+    <string name="category_proximity">Proximity sensor</string>
+    <string name="category_light">Light sensor</string>
+    <string name="category_accelerometer">Accelerometer sensor</string>
+    <string name="category_humidity">Humidity sensor</string>
+    <string name="category_temperature">Temperature sensor</string>
+    <string name="ui_okay">Okay</string>
+    <string name="ui_cancel">Cancel</string>
+    <string name="ui_error">Error</string>
+    <string name="ui_success" translatable="false">Success</string>
+    <string name="ui_na">Not Applicable</string>
+    <string name="ui_caution">Caution</string>
+    <string name="ui_not_support">Not supported</string>
+    <string name="ui_not_support_android_version">Only support Android %1$s+</string>
+    <string name="dialog_feature_na_message">Your Android device does not have this feature, or this feature may be using by other apps.</string>
+    <string name="dialog_permission_denied_message">Without granting permissions, it will probably not work.\n\nPlease grant the permissions to access this feature.</string>
+    <string name="dialog_permission_denied_posbtn">Settings</string>
+
+    <string name="title_activity_screen">Monitor Color</string>
+    <string name="title_activity_light">Light Sensor</string>
+    <string name="title_activity_humidity">Humidity Sensor</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_qr_scanner">Barcode/QR Code Scanner</string>
+    <string name="title_activity_bubble_level">Bubble level</string>
+    <string name="title_activity_sound_meter">Sound Meter</string>
+    <string name="title_activity_speed_test">Speed Test</string>
+    <string name="title_activity_flashlight">Flashlight</string>
+    <string name="title_activity_biometric">Fingerprint</string>
+    <string name="title_activity_drawing">Touch Screen</string>
+    <string name="title_activity_touch">Multi Touch</string>
+    <string name="title_activity_speaker">Speaker and Vibrate</string>
+    <string name="title_activity_microphone">Microphone</string>
+    <string name="title_activity_wifi">Wi-Fi</string>
+    <string name="title_activity_bluetooth">Bluetooth</string>
+    <string name="title_activity_ble">Bluetooth Low Energy</string>
+    <string name="title_activity_accelerometer">Accelerometer</string>
+    <string name="title_activity_step">Pedometer</string>
+    <string name="title_activity_temperature">Temperature Sensor</string>
+    <string name="title_activity_location">Location</string>
+    <string name="title_activity_nfc">NFC</string>
+    <string name="title_activity_proximity">Proximity Sensor</string>
+    <string name="title_activity_gravity">Gravity Sensor</string>
+    <string name="title_activity_pressure">Pressure Sensor</string>
+    <string name="title_activity_system_monitor">System Monitor</string>
+    <string name="title_activity_compass">Compass</string>
+    <string name="title_activity_device">Hardware</string>
+    <string name="title_activity_cpu">CPU/Memory</string>
+    <string name="title_activity_open_gl" translatable="false">OpenGL</string>
+    <string name="title_activity_android_version">Android Version</string>
+    <string name="title_activity_application">Installed Apps</string>
+    <string name="title_activity_battery">Battery</string>
+    <string name="title_activity_gsm">Network</string>
+    <string name="title_activity_test_ad_remover">Donate</string>
+    <string name="title_activity_app_brain">More App</string>
+    <string name="title_activity_rate_us">Rate us!</string>
+    <string name="title_activity_language">Language</string>
+
+    <string name="title_activity_app_choose">Installed Apps</string>
+    <string name="title_activity_app_user">User Installed Apps</string>
+    <string name="title_activity_app_system">System Apps</string>
+    <string name="title_activity_app_all">All Apps</string>
+    <string name="app_package">Application Package</string>
+
+    <string-array name="tools_string_array" translatable="false">
+        <item>@string/title_activity_qr_scanner</item>
+        <item>@string/title_activity_flashlight</item>
+        <item>@string/title_activity_bubble_level</item>
+        <item>@string/title_activity_sound_meter</item>
+    </string-array>
+    <string-array name="hardware_string_array" translatable="false">
+        <item>@string/title_activity_screen</item>
+        <item>@string/title_activity_drawing</item>
+        <item>@string/title_activity_touch</item>
+        <item>@string/title_activity_camera</item>
+        <item>@string/title_activity_speaker</item>
+        <item>@string/title_activity_microphone</item>
+        <item>@string/title_activity_nfc</item>
+        <item>@string/title_activity_location</item>
+        <item>@string/title_activity_biometric</item>
+    </string-array>
+    <string-array name="sensor_string_array" translatable="false">
+        <item>@string/title_activity_step</item>
+        <item>@string/title_activity_temperature</item>
+        <item>@string/title_activity_compass</item>
+        <item>@string/title_activity_light</item>
+        <item>@string/title_activity_accelerometer</item>
+        <item>@string/title_activity_proximity</item>
+        <item>@string/title_activity_pressure</item>
+        <item>@string/title_activity_gravity</item>
+        <item>@string/title_activity_humidity</item>
+    </string-array>
+    <string-array name="info_string_array" translatable="false">
+        <item>@string/title_activity_system_monitor</item>
+        <item>@string/title_activity_wifi</item>
+        <item>@string/title_activity_bluetooth</item>
+        <item>@string/title_activity_cpu</item>
+        <item>@string/title_activity_open_gl</item>
+        <item>@string/title_activity_device</item>
+        <item>@string/title_activity_android_version</item>
+        <item>@string/title_activity_battery</item>
+        <item>@string/title_activity_camera</item>
+        <item>@string/title_activity_gsm</item>
+        <item>@string/title_activity_application</item>
+    </string-array>
+    <string-array name="other_string_array" translatable="false">
+        <item>@string/title_activity_rate_us</item>
+        <item>@string/title_activity_language</item>
+        <item>@string/title_activity_test_ad_remover</item>
+    </string-array>
+    <string-array name="app_choose_string_array" translatable="false">
+        <item>@string/title_activity_app_user</item>
+        <item>@string/title_activity_app_system</item>
+        <item>@string/title_activity_app_all</item>
+    </string-array>
+
+    <string name="main_title_tools">Utilities &amp; Tools</string>
+    <string name="main_title_hardware">Hardware Testing</string>
+    <string name="main_title_sensor">Sensor Testing</string>
+    <string name="main_title_information">Device Information</string>
+    <string name="main_title_other">Other</string>
+
+    <string name="main_tab_title_1">Device Test</string>
+    <string name="main_tab_title_2">About</string>
+    <string-array name="main_tab_title" translatable="false">
+        <item>@string/main_tab_title_1</item>
+        <item>@string/main_tab_title_2</item>
+    </string-array>
+
+    <string name="app_info_tab_title_1">Actions</string>
+    <string name="app_info_tab_title_2">Package</string>
+    <string name="app_info_tab_title_3">Permissions</string>
+    <string-array name="app_info_tab_title" translatable="false">
+        <item>@string/app_info_tab_title_1</item>
+        <item>@string/app_info_tab_title_2</item>
+        <item>@string/app_info_tab_title_3</item>
+    </string-array>
+
+    <string name="test_monitor_tab_title_1">CPU</string>
+    <string name="test_monitor_tab_title_2">Network</string>
+    <string name="test_monitor_tab_title_3">Memory</string>
+    <string-array name="test_monitor_tab_title" translatable="false">
+        <item>@string/test_monitor_tab_title_1</item>
+        <item>@string/test_monitor_tab_title_2</item>
+        <item>@string/test_monitor_tab_title_3</item>
+    </string-array>
+
+    <string name="color_title">Please choose</string>
+    <string name="color_message">Normal mode:\nPress to change next color\n\nFixing mode:\nChanging color rapidly</string>
+    <string name="color_normal_btn">Normal mode</string>
+    <string name="color_test_btn">Fixing mode</string>
+    <string name="color_test_message">During the fixing mode, the screen will be flashing and changing color rapidly.
+        \nDO NOT WATCH to the screen otherwise it may hurt your eyes.
+        \n\nIt is recommend to do it in charging. This mode will be closed after 20 minutes automatically.
+        \n\nThis fixing mode is not guaranteed to fix the defective pixels. Please contact manufacturer if you have any problem.
+        \n\nYou may press the BACK key to the main screen.</string>
+
+    <string name="vibrate_button">Test Vibration</string>
+    <string name="vibrate_stop_button">Stop Vibration</string>
+    <string name="vibrate_string_1">Long Vibration</string>
+    <string name="vibrate_string_2">Short Vibration</string>
+    <string-array name="vibrate_string_array" translatable="false">
+        <item>@string/vibrate_string_1</item>
+        <item>@string/vibrate_string_2</item>
+    </string-array>
+
+    <string name="ring_button">Play Music</string>
+    <string name="ring_stop_button">Stop Music</string>
+    <string name="adjust_volume">Adjust the Volume</string>
+    <string name="vibrate_type">Vibration Mode</string>
+
+    <string name="nfc_tutor_message">Place any NFC tag behind the device, and you will get beep sounds when it is successful.</string>
+    <string name="touch_message">Touch the screen with multiple fingers.</string>
+
+    <string name="info_hardware_string_1">Brand</string>
+    <string name="info_hardware_string_2">Device</string>
+    <string name="info_hardware_string_3">Model</string>
+    <string name="info_hardware_string_4">Product name</string>
+    <string name="info_hardware_string_5">Display</string>
+    <string name="info_hardware_string_6">Fingerprint</string>
+    <string name="info_hardware_string_7">Board</string>
+    <string name="info_hardware_string_8">Manufacturer</string>
+    <string name="info_hardware_string_9">Serial</string>
+    <string name="info_hardware_string_10">User</string>
+    <string name="info_hardware_string_11">Host</string>
+    <string name="info_hardware_string_12">Board</string>
+    <string-array name="info_hardware_string_array" translatable="false">
+        <item>@string/info_hardware_string_1</item>
+        <item>@string/info_hardware_string_2</item>
+        <item>@string/info_hardware_string_3</item>
+        <item>@string/info_hardware_string_4</item>
+        <item>@string/info_hardware_string_5</item>
+        <item>@string/info_hardware_string_6</item>
+        <item>@string/info_hardware_string_7</item>
+        <item>@string/info_hardware_string_8</item>
+        <item>@string/info_hardware_string_9</item>
+        <item>@string/info_hardware_string_10</item>
+        <item>@string/info_hardware_string_11</item>
+        <item>@string/info_hardware_string_12</item>
+    </string-array>
+
+    <string name="app_package_string_1">Package</string>
+    <string name="app_package_string_2">Package Name</string>
+    <string name="app_package_string_3">Version Code</string>
+    <string name="app_package_string_4">Version</string>
+    <string name="app_package_string_5">Install Time</string>
+    <string name="app_package_string_6">Update Time</string>
+    <string name="app_package_string_7">Data Directory</string>
+    <string name="app_package_string_8">APK Directory</string>
+    <string name="app_package_string_9">Min. SDK Version</string>
+    <string name="app_package_string_10">Target SDK Version</string>
+    <string-array name="app_package_string_array" translatable="false">
+        <item>@string/app_package_string_1</item>
+        <item>@string/app_package_string_2</item>
+        <item>@string/app_package_string_3</item>
+        <item>@string/app_package_string_4</item>
+        <item>@string/app_package_string_5</item>
+        <item>@string/app_package_string_6</item>
+        <item>@string/app_package_string_7</item>
+        <item>@string/app_package_string_8</item>
+        <item>@string/app_package_string_9</item>
+        <item>@string/app_package_string_10</item>
+    </string-array>
+
+    <string name="app_action_string_1">Launch App</string>
+    <string name="app_action_string_2">Uninstall</string>
+    <string name="app_action_string_3">Control Panel</string>
+    <string name="app_action_string_4">Play Store</string>
+    <string-array name="app_action_string_array" translatable="false">
+        <item>@string/app_action_string_1</item>
+        <item>@string/app_action_string_2</item>
+        <item>@string/app_action_string_3</item>
+        <item>@string/app_action_string_4</item>
+    </string-array>
+
+    <string name="info_battery_charge_string_1">Discharging</string>
+    <string name="info_battery_charge_string_2">AC Charging</string>
+    <string name="info_battery_charge_string_3">USB Charging</string>
+    <string name="info_battery_charge_string_4">Unknown</string>
+    <string name="info_battery_charge_string_5">Wireless Charging</string>
+    <string-array name="info_battery_charge_string_array" translatable="false">
+        <item>@string/info_battery_charge_string_1</item>
+        <item>@string/info_battery_charge_string_2</item>
+        <item>@string/info_battery_charge_string_3</item>
+        <item>@string/info_battery_charge_string_4</item>
+        <item>@string/info_battery_charge_string_5</item>
+    </string-array>
+
+    <string name="info_battery_health_string_1">Unknown</string>
+    <string name="info_battery_health_string_2">Unknown</string>
+    <string name="info_battery_health_string_3">Good</string>
+    <string name="info_battery_health_string_4">Caution: Overheat</string>
+    <string name="info_battery_health_string_5">Caution: Dead</string>
+    <string name="info_battery_health_string_6">Caution: Over-Voltage</string>
+    <string name="info_battery_health_string_7">Unknown</string>
+    <string name="info_battery_health_string_8">Caution: Too Cold</string>
+    <string-array name="info_battery_health_string_array" translatable="false">
+        <item>@string/info_battery_health_string_1</item>
+        <item>@string/info_battery_health_string_2</item>
+        <item>@string/info_battery_health_string_3</item>
+        <item>@string/info_battery_health_string_4</item>
+        <item>@string/info_battery_health_string_5</item>
+        <item>@string/info_battery_health_string_6</item>
+        <item>@string/info_battery_health_string_7</item>
+        <item>@string/info_battery_health_string_8</item>
+    </string-array>
+
+    <string name="test_wifi_current_string_ssid">SSID</string>
+    <string name="test_wifi_current_string_bssid">BSSID</string>
+    <string name="test_wifi_current_string_network_id">Network ID</string>
+    <string name="test_wifi_current_string_mac_address">Mac Address</string>
+    <string name="test_wifi_current_string_speed">Speed</string>
+    <string name="test_wifi_current_string_txspeed" translatable="false">Tx Speed</string>
+    <string name="test_wifi_current_string_rxspeed" translatable="false">Rx Speed</string>
+    <string name="test_wifi_current_string_rssi">Strength</string>
+    <string name="test_wifi_current_string_frequency" translatable="false">Frequency</string>
+    <string name="test_wifi_current_string_ip_address">IP Address</string>
+    <string name="test_wifi_current_string_gateway">Default Gateway</string>
+    <string name="test_wifi_current_string_subnet_mask">Subnet Mask</string>
+    <string name="test_wifi_current_string_dns">DNS 1</string>
+    <string name="test_wifi_current_string_dns_2">DNS 2</string>
+    <string name="test_wifi_current_string_server_address">Server Address</string>
+
+    <string-array name="test_wifi_strength_string_array" translatable="false">
+        <item>@string/test_wifi_current_string_ssid</item>
+        <item>@string/test_wifi_current_string_bssid</item>
+        <item>@string/test_wifi_current_string_network_id</item>
+        <item>@string/test_wifi_current_string_speed</item>
+        <item>@string/test_wifi_current_string_txspeed</item>
+        <item>@string/test_wifi_current_string_rxspeed</item>
+        <item>@string/test_wifi_current_string_rssi</item>
+        <item>@string/test_wifi_current_string_frequency</item>
+        <item>@string/test_wifi_current_string_ip_address</item>
+        <item>@string/test_wifi_current_string_gateway</item>
+        <item>@string/test_wifi_current_string_subnet_mask</item>
+        <item>@string/test_wifi_current_string_dns</item>
+        <item>@string/test_wifi_current_string_dns_2</item>
+        <item>@string/test_wifi_current_string_server_address</item>
+    </string-array>
+
+    <string name="test_wifi_string_1">Current</string>
+    <string name="test_wifi_string_2">Available</string>
+    <string name="test_wifi_string_3">Saved SSID</string>
+    <string-array name="test_wifi_tab_title" translatable="false">
+        <item>@string/test_wifi_string_1</item>
+        <item>@string/test_wifi_string_2</item>
+        <item>@string/test_wifi_string_3</item>
+    </string-array>
+
+    <string name="test_bluetooth_string_1">Available Devices</string>
+    <string name="test_bluetooth_string_2">Paired Devices</string>
+    <string-array name="test_bluetooth_string_array" translatable="false">
+        <item>@string/test_bluetooth_string_1</item>
+        <item>@string/test_bluetooth_string_2</item>
+    </string-array>
+
+    <string name="info_cpu_string_1">Min Feq.</string>
+    <string name="info_cpu_string_2">Max Feq.</string>
+    <string name="info_cpu_string_3">CPU Core no.</string>
+    <string name="info_cpu_string_4">Internal Memory</string>
+    <string name="info_cpu_string_5">External Memory</string>
+    <string name="info_cpu_string_6">RAM Memory</string>
+    <string name="info_cpu_string_7">Detail Memory</string>
+    <string name="info_cpu_string_8" translatable="false">OpenGL ES 2.0</string>
+    <string name="info_cpu_string_9" translatable="false">OpenGL ES 3.0</string>
+    <string name="info_cpu_string_10" translatable="false">OpenGL ES 3.1</string>
+    <string-array name="info_cpu_string_array" translatable="false">
+        <item>@string/info_cpu_string_1</item>
+        <item>@string/info_cpu_string_2</item>
+        <item>@string/info_cpu_string_3</item>
+        <item>@string/info_cpu_string_4</item>
+        <item>@string/info_cpu_string_5</item>
+        <item>@string/info_cpu_string_6</item>
+        <item>@string/info_cpu_string_7</item>
+        <item>@string/info_cpu_string_8</item>
+        <item>@string/info_cpu_string_9</item>
+        <item>@string/info_cpu_string_10</item>
+    </string-array>
+
+    <string name="info_open_gl_string_1" translatable="false">OpenGL ES 2.0</string>
+    <string name="info_open_gl_string_2" translatable="false">OpenGL ES 3.0</string>
+    <string name="info_open_gl_string_3" translatable="false">OpenGL ES 3.1</string>
+    <string name="info_open_gl_string_4" translatable="false">Renderer</string>
+    <string name="info_open_gl_string_5" translatable="false">Vendor</string>
+    <string name="info_open_gl_string_6" translatable="false">Version</string>
+    <string name="info_open_gl_string_7" translatable="false">Subpixel Bits</string>
+    <string name="info_open_gl_string_8" translatable="false">Color Buffer Bit</string>
+    <string name="info_open_gl_string_9" translatable="false">Depth Bits</string>
+    <string name="info_open_gl_string_10" translatable="false">Max. Texture Units</string>
+    <string name="info_open_gl_string_11" translatable="false">Max. Texture Size</string>
+    <string name="info_open_gl_string_12" translatable="false">Max. Texture Stack Depth</string>
+    <string name="info_open_gl_string_13" translatable="false">Extensions</string>
+    <string-array name="info_open_gl_string_array" translatable="false">
+        <item>@string/info_open_gl_string_1</item>
+        <item>@string/info_open_gl_string_2</item>
+        <item>@string/info_open_gl_string_3</item>
+        <item>@string/info_open_gl_string_4</item>
+        <item>@string/info_open_gl_string_5</item>
+        <item>@string/info_open_gl_string_6</item>
+        <item>@string/info_open_gl_string_7</item>
+        <item>@string/info_open_gl_string_8</item>
+        <item>@string/info_open_gl_string_9</item>
+        <item>@string/info_open_gl_string_10</item>
+        <item>@string/info_open_gl_string_11</item>
+        <item>@string/info_open_gl_string_12</item>
+        <item>@string/info_open_gl_string_13</item>
+    </string-array>
+
+    <string name="memory_string_1">Total:\u0020</string>
+    <string name="memory_string_2">Available:\u0020</string>
+    <string name="memory_string_3">Used:\u0020</string>
+    <string name="memory_string_4">Threshold:\u0020</string>
+    <string-array name="memory_string_array" translatable="false">
+        <item>@string/memory_string_1</item>
+        <item>@string/memory_string_2</item>
+        <item>@string/memory_string_3</item>
+        <item>@string/memory_string_4</item>
+    </string-array>
+
+    <string name="info_android_version_string_1">Android Version</string>
+    <string name="info_android_version_string_2">Codename</string>
+    <string name="info_android_version_string_3">INCREMENTAL</string>
+    <string name="info_android_version_string_4">SDK Level</string>
+    <string name="info_android_version_string_5">Kernel Type</string>
+    <string name="info_android_version_string_6">Kernel OS</string>
+    <string name="info_android_version_string_7">Kernel OS Version</string>
+    <string name="info_android_version_string_8">JNI libraries</string>
+    <string name="info_android_version_string_9">VM libraries version</string>
+    <string name="info_android_version_string_10">VM libraries vendor</string>
+    <string name="info_android_version_string_11">VM libraries name</string>
+    <string name="info_android_version_string_12">VM implementation version</string>
+    <string name="info_android_version_string_13">VM implementation vendor</string>
+    <string name="info_android_version_string_14">VM implementation name</string>
+    <string name="info_android_version_string_15">VM specification version</string>
+    <string name="info_android_version_string_16">VM specification vendor</string>
+    <string name="info_android_version_string_17">VM specification name</string>
+    <string name="info_android_version_string_18">Location of the VM</string>
+    <string name="info_android_version_string_19">Timezone</string>
+    <string-array name="info_android_version_string_array" translatable="false">
+        <item>@string/info_android_version_string_1</item>
+        <item>@string/info_android_version_string_2</item>
+        <item>@string/info_android_version_string_3</item>
+        <item>@string/info_android_version_string_4</item>
+        <item>@string/info_android_version_string_5</item>
+        <item>@string/info_android_version_string_6</item>
+        <item>@string/info_android_version_string_7</item>
+        <item>@string/info_android_version_string_8</item>
+        <item>@string/info_android_version_string_9</item>
+        <item>@string/info_android_version_string_10</item>
+        <item>@string/info_android_version_string_11</item>
+        <item>@string/info_android_version_string_12</item>
+        <item>@string/info_android_version_string_13</item>
+        <item>@string/info_android_version_string_14</item>
+        <item>@string/info_android_version_string_15</item>
+        <item>@string/info_android_version_string_16</item>
+        <item>@string/info_android_version_string_17</item>
+        <item>@string/info_android_version_string_18</item>
+        <item>@string/info_android_version_string_19</item>
+    </string-array>
+
+    <string name="info_camera_string_1">Screen Width</string>
+    <string name="info_camera_string_2">Screen Height</string>
+    <string name="info_camera_string_3">Image Resolution</string>
+    <string name="info_camera_string_4">Antibanding</string>
+    <string name="info_camera_string_5">Color Effects</string>
+    <string name="info_camera_string_6">Flash Modes</string>
+    <string name="info_camera_string_7">Focus Modes</string>
+    <string name="info_camera_string_8">White Balance</string>
+    <string name="info_camera_string_9">Scene Modes</string>
+    <string name="info_camera_string_10">Picture Formats</string>
+    <string-array name="info_camera_string_array" translatable="false">
+        <item>@string/info_camera_string_1</item>
+        <item>@string/info_camera_string_2</item>
+        <item>@string/info_camera_string_3</item>
+        <item>@string/info_camera_string_4</item>
+        <item>@string/info_camera_string_5</item>
+        <item>@string/info_camera_string_6</item>
+        <item>@string/info_camera_string_7</item>
+        <item>@string/info_camera_string_8</item>
+        <item>@string/info_camera_string_9</item>
+        <item>@string/info_camera_string_10</item>
+    </string-array>
+
+    <string name="info_battery_string_1">Battery Level</string>
+    <string name="info_battery_string_2">Max Battery Level</string>
+    <string name="info_battery_string_3">Battery Health</string>
+    <string name="info_battery_string_4">Battery Status</string>
+    <string name="info_battery_string_5">Battery technology</string>
+    <string name="info_battery_string_6">Battery temperature</string>
+    <string name="info_battery_string_7">Battery voltage</string>
+    <string-array name="info_battery_string_array" translatable="false">
+        <item>@string/info_battery_string_1</item>
+        <item>@string/info_battery_string_2</item>
+        <item>@string/info_battery_string_3</item>
+        <item>@string/info_battery_string_4</item>
+        <item>@string/info_battery_string_5</item>
+        <item>@string/info_battery_string_6</item>
+        <item>@string/info_battery_string_7</item>
+    </string-array>
+
+    <string name="test_sensor_string_1">Reading</string>
+    <string name="test_sensor_string_2">Name</string>
+    <string name="test_sensor_string_3">Vendor</string>
+    <string name="test_sensor_string_4">Version</string>
+    <string name="test_sensor_string_5">Max. Range</string>
+    <string name="test_sensor_string_6">Min. Delay</string>
+    <string name="test_sensor_string_7">Resolution</string>
+    <string name="test_sensor_string_8">Power</string>
+    <string-array name="test_sensor_string_array" translatable="false">
+        <item>@string/test_sensor_string_1</item>
+        <item>@string/test_sensor_string_2</item>
+        <item>@string/test_sensor_string_3</item>
+        <item>@string/test_sensor_string_4</item>
+        <item>@string/test_sensor_string_5</item>
+        <item>@string/test_sensor_string_6</item>
+        <item>@string/test_sensor_string_7</item>
+        <item>@string/test_sensor_string_8</item>
+    </string-array>
+
+    <string name="test_gps_string_1">Latitude</string>
+    <string name="test_gps_string_2">Longitude</string>
+    <string name="test_gps_string_3">Speed</string>
+    <string name="test_gps_string_4">Altitude</string>
+    <string name="test_gps_string_5">Bearing</string>
+    <string name="test_gps_string_6">Accuracy</string>
+    <string-array name="test_gps_string_array" translatable="false">
+        <item>@string/test_gps_string_1</item>
+        <item>@string/test_gps_string_2</item>
+        <item>@string/test_gps_string_3</item>
+        <item>@string/test_gps_string_4</item>
+        <item>@string/test_gps_string_5</item>
+        <item>@string/test_gps_string_6</item>
+    </string-array>
+
+    <string name="info_gsm_string_1">SIM Card Country</string>
+    <string name="info_gsm_string_2">SIM Card Operator Code</string>
+    <string name="info_gsm_string_3">SIM Card Operator Name</string>
+    <string name="info_gsm_string_4">SIM Card State</string>
+    <string name="info_gsm_string_5">IMEI/ESN</string>
+    <string name="info_gsm_string_6">Device Software Version</string>
+    <string name="info_gsm_string_7">Phone Number</string>
+    <string name="info_gsm_string_8">Network Country</string>
+    <string name="info_gsm_string_9">Network Operator Code</string>
+    <string name="info_gsm_string_10">Network Operator Name</string>
+    <string name="info_gsm_string_11">Network Roaming</string>
+    <string name="info_gsm_string_12">SIM Serial Number</string>
+    <string name="info_gsm_string_13">Subscriber ID</string>
+    <string-array name="info_gsm_string_array" translatable="false">
+        <item>@string/info_gsm_string_1</item>
+        <item>@string/info_gsm_string_2</item>
+        <item>@string/info_gsm_string_3</item>
+        <item>@string/info_gsm_string_4</item>
+        <item>@string/info_gsm_string_6</item>
+        <item>@string/info_gsm_string_7</item>
+        <item>@string/info_gsm_string_8</item>
+        <item>@string/info_gsm_string_9</item>
+        <item>@string/info_gsm_string_10</item>
+        <item>@string/info_gsm_string_11</item>
+        <item>@string/info_gsm_string_13</item>
+    </string-array>
+
+    <string name="info_sim_status_string_1">Unknown</string>
+    <string name="info_sim_status_string_2">No SIM card</string>
+    <string name="info_sim_status_string_3">Locked: requires the SIM PIN to unlock</string>
+    <string name="info_sim_status_string_4">Locked: requires the SIM PUK to unlock</string>
+    <string name="info_sim_status_string_5">Locked: requires a network PIN to unlock</string>
+    <string name="info_sim_status_string_6">Ready</string>
+    <string-array name="info_sim_status_string_array" translatable="false">
+        <item>@string/info_sim_status_string_1</item>
+        <item>@string/info_sim_status_string_2</item>
+        <item>@string/info_sim_status_string_3</item>
+        <item>@string/info_sim_status_string_4</item>
+        <item>@string/info_sim_status_string_5</item>
+        <item>@string/info_sim_status_string_6</item>
+    </string-array>
+
+    <string name="wifi_setting">Setting</string>
+    <string name="wifi_reload">Refresh</string>
+    <string name="wifi_reload_done">Reload Succeeded</string>
+    <string name="wifi_reload_fail">Reload failed</string>
+    <string name="wifi_enable_message">You need to enable Wi-Fi to continue.</string>
+    <string name="wifi_enable_posbtn">Go to Wi-Fi setting</string>
+    <string name="wifi_no">No Wi-Fi Connected</string>
+    <string name="bluetooth_setting">Setting</string>
+    <string name="bluetooth_enable_message">You need to enable Bluetooth to continue.</string>
+    <string name="bluetooth_enable_posbtn">Go to Bluetooth setting</string>
+    <string name="gps_setting">Location Setting</string>
+    <string name="security_setting">Setting</string>
+    <string name="gps_scanning">Scanning</string>
+    <string name="gps_enable_message">You need to enable Location to continue.</string>
+    <string name="gps_enable_posbtn">Go to Location setting</string>
+    <string name="nfc_enable_message">You need to enable NFC to continue.</string>
+    <string name="nfc_enable_posbtn">Go to NFC setting</string>
+    <string name="nfc_setting">NFC setting</string>
+    <string name="flash_on">Turn On Flashlight</string>
+    <string name="flash_off">Turn Off Flashlight</string>
+    <string name="ui_share">Share</string>
+    <string name="action_iap">Ad Remove</string>
+    <string name="cpu_speed">Speed</string>
+    <string name="cpu_core">No. of Core</string>
+    <string name="cpu_min">Min Speed</string>
+    <string name="cpu_max">Max Speed</string>
+    <string name="network_upspeed">Upload Speed</string>
+    <string name="network_downspeed">Download Speed</string>
+    <string name="memory_ava">Available</string>
+    <string name="memory_total">Total</string>
+    <string name="memory_used">Used</string>
+    <string name="ui_version">Version</string>
+    <string name="pref_feedback">Give me Feedback</string>
+    <string name="pref_restore_purchase" translatable="false">Restore purchase</string>
+    <string name="pref_credit">Open source licenses</string>
+    <string name="pref_hide_fullscreen_ad">Hide Full Screen Ads</string>
+    <string name="feedback_title">Test Your Android App: Report and Feedback</string>
+    <string name="pref_more_app">Developer\'s app</string>
+    <string name="rate_title">Did you like the app?</string>
+    <string name="rate_message">Let us know what you think</string>
+    <string name="rate_navbtn">No, thanks</string>
+    <string name="rate_netbtn">Later on</string>
+    <string name="rate_posbtn">Rate now</string>
+    <string name="share_button">Share it!!!</string>
+    <string name="share_message">Test Your Android is the best app to test your Android devices.</string>
+    <string name="mic_start_recording">Start recording</string>
+    <string name="mic_start_playing">Start playing</string>
+    <string name="mic_stop">Stop</string>
+
+    <string name="ui_relative_humidity">Relative Humidity:\u0020</string>
+    <string name="ui_absolute_humidity">Absolute Humidity:\u0020</string>
+    <string name="ui_dew_point">Dew Point:\u0020</string>
+
+    <string name="dialog_camera_title">Please select camera</string>
+    <string name="iab_complete_title">Thanks</string>
+    <string name="iab_complete_message">Please restart the app to apply the change.</string>
+    <string name="ui_loading">Loading...</string>
+    <string name="ui_fingerprint_not_locked">Please enable lock screen security in Settings.</string>
+    <string name="ui_fingerprint_not_register">Register at least one fingerprint in Settings.</string>
+    <string name="ui_fingerprint_start_message">Put your finger on the sensor.</string>
+    <string name="ui_fingerprint_fail">Not recognized.</string>
+    <string name="ui_fingerprint_help">Authentication Help</string>
+    <string name="ui_fingerprint_succeeded">Succeeded.</string>
+
+    <string name="app_not_found">No application found.</string>
+    <string name="bubble_level_vertical">Plumb</string>
+    <string name="bubble_level_horizontal">Level</string>
+
+    <string name="dialog_drawing_cancel_message" translatable="false">Changes you made may not be saved. Are you sure to leave?</string>
+
+    <string name="settings_unit">Unit</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_light">Light Theme</string>
+    <string name="theme_dark">Dark Theme</string>
+    <string name="theme_auto">System Default</string>
+    <string-array name="theme_array" translatable="false">
+        <item>@string/theme_light</item>
+        <item>@string/theme_dark</item>
+        <item>@string/theme_auto</item>
+    </string-array>
+    <string name="settings_unit_metric">Metric</string>
+    <string name="settings_unit_imperial">Imperial</string>
+    <string-array name="settings_unit_array" translatable="false">
+        <item>@string/settings_unit_metric</item>
+        <item>@string/settings_unit_imperial</item>
+    </string-array>
+
+    <string name="compass_north" translatable="false">N</string>
+    <string name="compass_east" translatable="false">E</string>
+    <string name="compass_south" translatable="false">S</string>
+    <string name="compass_west" translatable="false">W</string>
+    <string name="compass_northeast" translatable="false">NE</string>
+    <string name="compass_northwest" translatable="false">NW</string>
+    <string name="compass_southeast" translatable="false">SE</string>
+    <string name="compass_southwest" translatable="false">SW</string>
+    <string name="dialog_settings_choose_theme_title">Choose theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    Hide Full Screen Ads
+
+
+</resources>
