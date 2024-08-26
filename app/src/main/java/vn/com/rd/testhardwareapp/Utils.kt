@@ -19,6 +19,8 @@ import vn.com.rd.testhardwareapp.mqtt.beans.reportTestBigScreen.ReportTestBigSce
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestBigScreen.ReportTestBigScreen
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestHC.ReportTestHCRequest
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestHC.ReportTestHCRequestData
+import vn.com.rd.testhardwareapp.mqtt.beans.reportTestLightSensor.ReportTestLightSensor
+import vn.com.rd.testhardwareapp.mqtt.beans.reportTestLightSensor.ReportTestLightSensorData
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestMic.ReportTestMic
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestMic.ReportTestMicData
 import vn.com.rd.testhardwareapp.mqtt.beans.reportTestPresenceSensor.ReportTestPresenceSensor
@@ -186,6 +188,17 @@ object Utils : KoinComponent {
     fun sendTestTouchBigScreen(success: Int){
         val message = ReportTestBigScreenTouch()
         val data = ReportTestBigScreenTouchData()
+        data.code = success
+        message.data = data
+        val sendMessageAsync = SendMessageAsync(object : OnResponseListener {
+            override fun onResponse(result: String?) {}
+        }, addToQueue = true)
+        sendMessageAsync.execute(message)
+    }
+
+    fun sendTestLightSensorReport(success : Int){
+        val message = ReportTestLightSensor()
+        val data = ReportTestLightSensorData()
         data.code = success
         message.data = data
         val sendMessageAsync = SendMessageAsync(object : OnResponseListener {

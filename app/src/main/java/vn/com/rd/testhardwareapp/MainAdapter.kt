@@ -42,21 +42,25 @@ class MainAdapter(private var categoryList: List<String>) :
             if(position == 0){
                 Utils.sendTestBigScreenReport(if(isChecked) 0 else 1)
             }
+//            else if(position == 1){
+//                Utils.sendTestSmallScreenReport(if(isChecked) 0 else 1)
+//            }
             else if(position == 1){
-                Utils.sendTestSmallScreenReport(if(isChecked) 0 else 1)
-            }
-            else if(position == 2){
                 Utils.sendTestMicReport(if(isChecked) 0 else 1)
             }
-            else if(position == 3){
+            else if(position == 2){
                 Utils.sendTestSpeakerReport(if(isChecked) 0 else 1)
             }
-            else if(position == 4){
+            else if(position == 3){
                 Utils.sendTestTouchBigScreen(if(isChecked) 0 else 1)
             }
-            else if(position == 5){
+            else if(position == 4){
                 Utils.sendTestPresenceReport(if(isChecked) 0 else 1)
-            } else {}
+            }
+            else if(position == 5){
+                Utils.sendTestLightSensorReport(if(isChecked) 0 else 1)
+            }
+            else { }
 //            Utils.sendTestReport()
         }
     }

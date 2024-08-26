@@ -2,7 +2,7 @@
     <string name="app_name">TestHardwareApp</string>
     <string-array name="test_category">
         <item>Screen</item>
-        <item>Mini Screen</item>
+<!--        <item>Mini Screen</item>-->
         <item>Microphone</item>
         <item>Sound</item>
         <item>Touch</item>

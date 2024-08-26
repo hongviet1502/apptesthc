@@ -45,7 +45,7 @@ class MicrophoneActivity : AppCompatActivity() {
         supportActionBar?.setHomeAsUpIndicator(backArrowDrawable)
 
         binding.playBtn.isEnabled = false
-        mFile = File(this@MicrophoneActivity.filesDir, "TestYourAndroidMicTest.m4a")
+        mFile = File(this@MicrophoneActivity.filesDir, "TestYourAndroidMicTest.3gp")
         binding.recordBtn.setOnClickListener {
             if (mIsRecording) {
                 stopRecording()
@@ -109,8 +109,8 @@ class MicrophoneActivity : AppCompatActivity() {
             mMediaRecorder = MediaRecorder()
             mMediaRecorder?.let { mMediaRecorder ->
                 mMediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC)
-                mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.MPEG_4)
-                mMediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC_ELD)
+                mMediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.AMR_NB)
+                mMediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB)
                 mMediaRecorder.setAudioEncodingBitRate(16)
                 mMediaRecorder.setAudioSamplingRate(44100)
                 mMediaRecorder.setOutputFile(mFile.absolutePath)
@@ -140,7 +140,7 @@ class MicrophoneActivity : AppCompatActivity() {
                     ignored.printStackTrace()
                 }
             }
-            mMediaPlayer.reset()
+//            mMediaPlayer.reset()
             mMediaPlayer.release()
         }
         binding.playBtn.isEnabled = true
@@ -158,7 +158,7 @@ class MicrophoneActivity : AppCompatActivity() {
                     ignored.printStackTrace()
                 }
             }
-            mMediaRecorder.reset()
+//            mMediaRecorder.reset()
             mMediaRecorder.release()
         }
         binding.playBtn.isEnabled = true
